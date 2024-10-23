@@ -1,23 +1,17 @@
-# Use an official Node.js runtime as the base image
-FROM node:18-alpine
+# Use the latest version of the Node.js image as the base image
+FROM node:latest  
 
-# Set the working directory in the container
-WORKDIR /app
+# Set the working directory inside the container to /usr/src/app
+WORKDIR /usr/src/app  
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy the contents of the local "nodeapp" directory to the root directory of the container
+COPY nodeapp/* /  
 
-# Install dependencies
-RUN npm install
+# Run the npm install command to install the dependencies specified in package.json
+RUN npm install  
 
-# Copy the rest of the application code to the container
-COPY . .
+# Expose port 3000 to allow incoming connections to the container
+EXPOSE 3000  
 
-
-RUN npm run build
-
-
-CMD ["npm", "start"]
-
-
-EXPOSE 3000
+# Start the application by running the "npm start" command
+CMD [ "npm", "start" ]  
