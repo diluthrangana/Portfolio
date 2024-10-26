@@ -258,11 +258,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  -webkit-text-stroke: 1px rgb(162, 156, 177); /* for webkit browsers like Chrome and Safari */
-  text-stroke: 1px rgb(141, 144, 158); /* for other browsers */
+  -webkit-text-stroke: 1px rgb(162, 156, 177); 
+  text-stroke: 1px rgb(141, 144, 158); 
 }
 .banner p {
-  color: #B8B8B8;
+  color: #4d4c4c;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -311,12 +311,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #ffffff;
 }
 .skill-bx {
-  background: #1a1830;
+  background: #ffffff;
+  border: 1px solid #d3d3d3; /* ash color border */
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
