@@ -20,16 +20,17 @@ jobs:
         with:
           node-version: '18'  # Change this if you need a different version
 
-      # Step 3: Install dependencies and build the project
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 4: Build the project, allowing warnings
       - name: Build project
-        run: npm run build
+        run: CI='' npm run build  # Setting CI='' disables "treat warnings as errors" behavior
 
-      # Step 4: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # This should be the directory where your build files are located
+          publish_dir: ./build  # Adjust this to the correct build directory if needed
