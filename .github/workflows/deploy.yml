@@ -35,4 +35,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build  # Adjust this to the correct build directory if needed
  
-#test
