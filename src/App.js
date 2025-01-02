@@ -7,18 +7,19 @@ import { Banner } from './components/Banner';
 import { Services } from './components/Services';
 import { Footer } from './components/Footer';
 import { Projects } from './components/Projects';
+import { Skills } from './components/Skills';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <NavBar />
+        <Banner />
         <Routes>
           <Route 
             path="/" 
             element={
-              <>
-                <Banner />
+              <>               
                 <Services />
                 <Footer />
               </>
@@ -27,9 +28,18 @@ function App() {
           <Route 
             path="/projects" 
             element={
-            <>
-            <Banner />
+            <>            
             <Projects />
+            <Footer />
+            </>
+            } 
+          />
+          <Route 
+            path="/skills" 
+            element={
+            <>            
+            <Skills />
+            <Footer />
             </>
             } 
           />

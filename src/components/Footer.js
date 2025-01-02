@@ -7,36 +7,40 @@ export const Footer = () => {
       <Container>
         <Row className="py-4">
           <Col md={4} className="footer-section">
-            <h5>About Us</h5>
-            <p>
-              We are committed to delivering top-notch services tailored to your needs. 
-              Join us to experience quality and innovation.
-            </p>
-          </Col>
-          <Col md={4} className="footer-section">
-            <h5>Quick Links</h5>
+            <h5 className="footer-title">Quick Links</h5>
             <ul className="footer-links">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blog">Blog</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#faq">FAQ</a></li>
             </ul>
           </Col>
           <Col md={4} className="footer-section">
-            <h5>Contact Us</h5>
-            <p>Email: support@example.com</p>
-            <p>Phone: +1 123 456 7890</p>
+            <h5 className="footer-title">Get in Touch</h5>
+            <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+            <p>Phone: <a href="tel:+11234567890">+1 123 456 7890</a></p>
             <div className="social-icons">
-              <a href="#facebook" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+              <a href="#facebook" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
               <a href="#twitter" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-              <a href="#linkedin" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
+              <a href="#linkedin" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#instagram" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
             </div>
+          </Col>
+          <Col md={4} className="footer-section">
+            <h5 className="footer-title">About Us</h5>
+            <p>
+              We are dedicated to delivering innovative solutions and high-quality services
+              that meet your expectations. Let’s build a brighter future together.
+            </p>
           </Col>
         </Row>
       </Container>
       <div className="footer-bottom">
-        <hr />
-        <p className="text-center">© {new Date().getFullYear()} Your Company. All rights reserved.</p>
+        <p className="text-center">
+          © {new Date().getFullYear()} Your Company. All rights reserved. | 
+          <a href="#privacy" className="footer-bottom-link"> Privacy Policy</a> | 
+          <a href="#terms" className="footer-bottom-link"> Terms of Service</a>
+        </p>
       </div>
     </footer>
   );
