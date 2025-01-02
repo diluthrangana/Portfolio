@@ -17,7 +17,7 @@ function App() {
         <Banner />
         <Routes>
           <Route 
-            path="/" 
+            path="/Portfolio" 
             element={
               <>               
                 <Services />
@@ -26,7 +26,7 @@ function App() {
             } 
           />
           <Route 
-            path="/projects" 
+            path="/Portfolio/projects" 
             element={
             <>            
             <Projects />
@@ -35,7 +35,7 @@ function App() {
             } 
           />
           <Route 
-            path="/skills" 
+            path="/Portfolio/skills" 
             element={
             <>            
             <Skills />
