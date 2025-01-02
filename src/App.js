@@ -17,7 +17,7 @@ function App() {
         <Banner />
         <Routes>
           <Route 
-            path="/" 
+            path="/Portfolio" 
             element={
               <>               
                 <Services />
