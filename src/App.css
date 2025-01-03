@@ -260,7 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
   -webkit-text-stroke: 1px rgb(162, 156, 177); 
-  text-stroke: 1px rgb(141, 144, 158); 
+  
 }
 .banner p {
   color: #424242;
