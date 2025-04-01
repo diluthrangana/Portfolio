@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE_BACKEND = 'yourdockerhub/mern-backend'
-        DOCKER_IMAGE_FRONTEND = 'yourdockerhub/mern-frontend'
+        DOCKER_IMAGE_BACKEND = 'diluthrangana/mern-backend'
+        DOCKER_IMAGE_FRONTEND = 'diluthrangana/mern-frontend'
         DOCKER_TAG = "${env.BUILD_NUMBER}"
         AWS_REGION = 'us-east-1'
         KUBECONFIG = credentials('kubeconfig')
